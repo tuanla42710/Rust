@@ -54,10 +54,6 @@ fn check_pw_strength(_psw : &str) ->bool {
     return contain_lower_case && contain_special_char && contain_upper_case && contain_digit;   
 }
 
-fn test() -> String {
-    let x = "a";
-    return x.to_string();
-}
 
 fn test2<'b>() -> &'b str {
     let  a = "hello";
