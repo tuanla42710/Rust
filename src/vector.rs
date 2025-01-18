@@ -126,26 +126,25 @@ std::vec::Vec<T> T can be any type
     println!("{:?}", v1); // co the dung extent 
  */
 
-use std::collections::VecDeque;
+ use std::collections::VecDeque;
 
 
 
-fn retain_positive(x : &i32)->bool {
-    *x > 0
-}
-
-fn main(){
-    let mut vd = VecDeque::with_capacity(6);
-    vd.push_back(2);
-    vd.push_back(12);
-    vd.push_front(1);
-
-    let (front, back ) = vd.as_slices();
-
-    println!("vd : {:?}", vd);
-    println!("back {:?}", front);
-    println!("front {:?}", back);
-}
-
-
-
+ fn retain_positive(x : &i32)->bool {
+     *x > 0
+ }
+ 
+ /* 
+ fn main(){
+     let mut vd = VecDeque::with_capacity(6);
+     vd.push_back(2);
+     vd.push_back(12);
+     vd.push_front(1);
+ 
+     let (front, back ) = vd.as_slices();
+ 
+     println!("vd : {:?}", vd);
+     println!("back {:?}", front);
+     println!("front {:?}", back);
+ }
+*/
